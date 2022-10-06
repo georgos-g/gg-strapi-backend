@@ -107,8 +107,10 @@ coverage
 ############################
 
 .env
+.env.example
 license.txt
 exports
 *.cache
 build
 .strapi-updater.json
+package.lock.json
