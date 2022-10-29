@@ -60,6 +60,16 @@
     "Description": {
       "type": "string",
       "required": true
+    },
+    "Media": {
+      "allowedTypes": [
+        "images",
+        "videos",
+        "audios",
+        "files"
+      ],
+      "type": "media",
+      "multiple": true
     }
   }
 }
