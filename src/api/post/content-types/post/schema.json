@@ -47,29 +47,28 @@
       "relation": "oneToMany",
       "target": "api::tag.tag"
     },
-    "Content": {
-      "type": "text",
-      "required": true
-    },
     "categories": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::category.category",
       "mappedBy": "posts"
     },
-    "Description": {
-      "type": "string",
-      "required": true
-    },
     "Media": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "videos",
         "audios",
         "files"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
+    },
+    "Description": {
+      "type": "string"
+    },
+    "Content": {
+      "type": "richtext"
     }
   }
 }
