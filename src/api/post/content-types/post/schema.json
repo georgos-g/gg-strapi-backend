@@ -12,10 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Date": {
-      "type": "date",
-      "required": true
-    },
     "admin_users": {
       "type": "relation",
       "relation": "oneToMany",
@@ -69,6 +65,9 @@
     },
     "Content": {
       "type": "richtext"
+    },
+    "Date": {
+      "type": "date"
     }
   }
 }
